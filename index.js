@@ -6,9 +6,9 @@ const { userRouter } = require("./routes/user.routes");
 const app=express();
 require("dotenv").config();
 
-// app.use("/",(req,res)=>{
-//     res.send(`<h4> This is the home page </h4>`)
-// })
+app.use("/",(req,res)=>{
+    res.send(`<h4> This is the home page </h4>`)
+})
 
 app.use("/user",userRouter);
 
